@@ -6,7 +6,19 @@ module Rma
   module Payment
     module Gateway
       class Error < StandardError; end
-      # Your code goes here...
+
+      class << self
+        attr_accessor :configuration
+      end
+
+      def self.configure
+        self.configuration ||= Configuration.new
+        yield(configuration)
+      end
+
+      def self.client
+        Client.new(configuration)
+      end
     end
   end
 end
