@@ -10,23 +10,23 @@ module Rma
       # Handles account inquiry for the RMA Payment Gateway client.
       #
       # @example
-      #   auth = Rma::Payment::Gateway::AccountInquiry.new(client, transaction_id, bank_id, account_no)
-      #   auth.account_inquiry
+      #   auth = Rma::Payment::Gateway::AccountInquiry.new(client)
+      #   auth.call(transaction_id, bank_id, account_no)
       #
       # @param client [Rma::Payment::Gateway::Client] Client instance
       class AccountInquiry
         attr_reader :client, :transaction_id, :bank_id, :account_no
 
-        def initialize(client, transaction_id, bank_id, account_no)
+        def initialize(client)
           @client = client
-          @transaction_id = transaction_id
-          @bank_id = bank_id
-          @account_no = account_no
         end
 
         # Fetch account inquiry
         # Returns the account inquiry response
-        def call
+        def call(transaction_id, bank_id, account_no)
+          @transaction_id = transaction_id
+          @bank_id = bank_id
+          @account_no = account_no
           response = client.post(
             body: account_inquiry_request_body
           )
