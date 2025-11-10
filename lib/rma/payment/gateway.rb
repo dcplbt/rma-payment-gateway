@@ -5,9 +5,9 @@ require_relative "gateway/configuration"
 require_relative "gateway/client"
 require_relative "gateway/utils"
 require_relative "gateway/errors"
-require_relative "gateway/services/authorization"
-require_relative "gateway/services/account_inquiry"
-require_relative "gateway/services/debit_request"
+require_relative "gateway/authorization"
+require_relative "gateway/account_inquiry"
+require_relative "gateway/debit_request"
 
 module Rma
   module Payment
