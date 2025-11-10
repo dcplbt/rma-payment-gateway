@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "RMA Payment Gateway"
   spec.description = "A Ruby gem for integrating with RMA Payment Gateway API, including Payment Authorization, Debit payment request, and Payment OTP confirmation."
   spec.homepage = "https://github.com/dcplbt/rma-payment-gateway"
-  spec.required_ruby_version = ">= 3.2.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
