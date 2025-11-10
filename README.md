@@ -1,7 +1,7 @@
 # RMA Payment Gateway Ruby Gem
 
 [![Gem Version](https://badge.fury.io/rb/rma-payment-gateway.svg)](https://badge.fury.io/rb/rma-payment-gateway)
-[![Ruby](https://img.shields.io/badge/ruby-%3E%3D%203.2.0-ruby.svg)](https://www.ruby-lang.org/en/)
+[![Ruby](https://img.shields.io/badge/ruby-%3E%3D%202.7.0-ruby.svg)](https://www.ruby-lang.org/en/)
 
 A Ruby gem for integrating with the RMA (Royal Monetary Authority of Bhutan) Payment Gateway API. This gem provides a simple and intuitive interface for processing payments through the RMA Payment Gateway system.
 
